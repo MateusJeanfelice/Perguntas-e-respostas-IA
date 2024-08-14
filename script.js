@@ -6,77 +6,52 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Enunciado principal",
+        enunciado: "vocẽ quer comprar uma moto nova e está na dúvida entre a moto dos seus sonhos ou uma moto mais  adequada para seu uso ",
         alternativas: [
             {
-                texto: "Texto 1",
-                afirmacao: "Afirmação 1 "
+                texto: "a moto dos seus sonhos",
+                afirmacao: "realizar seus sonhos motiva a conquistar coisas cada vez melhores "
             },
             {
-                texto: "Texto 2",
-                afirmacao: "Afirmação 2"
+                texto: "a mais adequada ",
+                afirmacao: "a escolha mais racional visando usabilidade e economia sem dúvidas é uma ótima ideia"
             }
         ]
     },
     {
-        enunciado: "Enunciado 2",
+        enunciado: "Cidades grandes tÊm um alto indice de criminalidade e seria melhor proteger sua moto de alguma forma",
         alternativas: [
             {
-                texto: "texto botão 1",
-                afirmacao: "Afirmação do texto botão 2"
+                texto: "contratar uma seguradora",
+                afirmacao: "seguradoras são a garantia que você não irá perder o valor investido na compra da sua moto em casos de roubos ou até acidentes"
             },
             {
-                texto: "texto botão 2",
-                afirmacao: "Afirmação do texto botão 2"
+                texto: "instalar um rastreador",
+                afirmacao: "rastreadores são muito baratos e ajudam muito a localizar sua moto caso ela seje furtada"
             }
         ]
     },
     {
-        enunciado: "Enunciado 3",
+        enunciado: "Ao comprar uma moto usada pode acontecer problemas que você não espera, podendo causar alguns transtornos indesejados",
         alternativas: [
             {
-                texto: "texto botão 1",
-                afirmacao: "Afirmação do texto botão 1"
+                texto: "levar a uma oficina e fazer uma revisão",
+                afirmacao: "Manter a moto sempre revisada vai te tirar de problemas e aumenta sua segurança"
             },
             {
-                texto: "texto botão 2",
-                afirmacao: "Afirmação do texto botão 2"
+                texto: "Rodar até apresentar algum problema",
+                afirmacao: "Nao ira fazer você gastar muito dinheiro de uma vez mas poderá te deixar na mão por algum defeito"
             }
         ]
     },
-    {
-        enunciado: "Enunciado 4",
-        alternativas: [
-            {
-                texto: "texto botão 1",
-                afirmacao: "Afirmação do texto botão 1"
-            },
-            {
-                texto: "texto botão 2",
-                afirmacao: "Afirmação do texto botão 2"
-            }
-        ]
-    },
-    {
-        enunciado: "Enunciado 5",
-        alternativas: [
-            {
-                texto: "texto botão 1",
-                afirmacao: "Afirmação do texto botão 1"
-            },
-            {
-                texto: "texto botão 2",
-                afirmacao: "Afirmação do texto botão 2"
-            }
-        ]
-    },
+   
    
 ];
 
 
 let atual = 0;
 let perguntaAtual;
-let historiaFinal = "";
+let historiaFinal = "";https://mateusjeanfelice.github.io/Perguntas-e-respostas-IA/
 
 function mostraPergunta() {
     if (atual >= perguntas.length) {
